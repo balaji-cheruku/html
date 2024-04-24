@@ -1,0 +1,54 @@
+<!-- // Tables
+
+Tables are used to represent data in rows and columns. it is easy to understand complex data.
+
+whole table in html is represented by "table tag"
+Each row in table is represented by "tr" tag
+Each data in table represented by "td" tag
+incase, if we need any heading , we can use "th" tag.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student marks</title>
+</head>
+<body>
+    <h1><strong>Student Table</strong> </h1>
+    <table border="15" cellspacing="5" cellpadding="15">
+        <caption><strong> marks</strong></caption>
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Marks</th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>goku</td>
+                <td rowspan="2">95</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>vegeta</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>gohan</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td colspan="2">unknown</td>
+            </tr>
+
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>
