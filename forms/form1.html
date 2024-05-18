@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form>
+        <fieldset>
+            <legend><strong>Registration Form</strong></legend>
+            <div>
+            <label for="uname"><strong>NAME</strong></label>
+                <input type="text" placeholder="Enter username" name="uname" id="uname" required >
+                [ max 20 characters A-Z and a-z ]
+            </div><br>
+            <div>
+                <label for="email"><strong>EMAIL</strong></label>
+                <input typr="text" placeholder="Enter email" name="email" id="email" pattern="[a-z][A-Z][0-9][!@#$%^&*?]" required >
+                [ max 20 characters A-Z,a-z and !@#$ ]
+            </div><br>
+            <div>
+                <label for="pwd"><strong>PASSWORD</strong></label>
+                <input type="text" placeholder="Enter password" name="pwd" id="pwd">
+            </div><br>
+            <div>
+                <label for="phone"><b>PHONE NO</b></label>
+                <span >+91</span>
+                <input type="tel" placeholder="Enter your number" name="phone" id="phone" pattern="[0-9]{10}">
+            </div><br>
+        </fieldset><br>
+        <div>
+            <label for="dob"><b>Date of Birth</b></label>
+            <input type="date" name="dob">
+        </div><br>
+        <div>
+            <label for="age"><strong>Age</strong></label>
+            <input type="number" placeholder="Enter Age" name="age" id="age" min="18" max="60">
+        </div><br>
+        <div>
+            <label for="gender"><strong>Gender</strong></label><br>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="gender" value="others">
+            <label for="others">Others</label><br>
+        </div><br>
+        <div>
+            <label for="lang"><strong>Select the Frontend Courses</strong></label><br>
+            <input type="checkbox" name="lang" id="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" name="lang" id="css">
+            <label for="python"> CSS</label><br>
+            <input type="checkbox" name="lang" id="js">
+            <label for=".net">  JS</label><br>
+        </div><br>
+        <div>
+            <label for="course"><b>Course Offered</b></label>
+            <select id="course" name="course" placeholder="Select the course">
+                <option value="java">Java Full stack</option>
+                <option value="python">Python Full stack</option>
+                <option value=".net">.Net Full stack</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="addr"><strong>Address</strong></label><br>
+            <textarea name="addr" placeholder="Enter your Address" rows="5" cols="30" ></textarea>
+        </div><br>
+        <div>
+            <input type="submit" name="submit" id="submit" placeholder="Submit">
+            <form action="http://127.0.0.1:5500/demo.html/submit">
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+    
+
+        
+
+    
